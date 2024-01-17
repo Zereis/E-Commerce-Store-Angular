@@ -1,0 +1,55 @@
+<!-- mat-toolbar with custom styles -->
+<mat-toolbar class="justify-between max-w-7xl mx-auto border-x">
+
+  <!-- Navigation link to the home page using Angular Router -->
+  <a routerLink="home">Code with Sloba store</a>
+
+  <!-- Button to trigger a mat-menu with shopping cart information -->
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <!-- Mat-icon with a badge displaying the number of items in the cart -->
+    <mat-icon
+      [matBadge]="itemsQuantity"
+      [matBadgeHidden]="!itemsQuantity"
+      matBadgeColor="warn"
+    >shopping_cart</mat-icon>
+  </button>
+
+  <!-- mat-menu containing shopping cart details -->
+  <mat-menu #menu="matMenu">
+    <div class="p-3 divide-y divide-solid">
+
+      <!-- Display the number of items in the cart and a link to view the cart -->
+      <div class="pb-3 flex justify-between">
+        <span class="mr-16">{{ cart.items.length }} items</span>
+        <a routerLink="cart">View Cart</a>
+      </div>
+
+      <!-- Display details of each item in the cart using ngFor -->
+      <div *ngIf="cart.items.length" class="py-3">
+        <div *ngFor="let item of cart.items" class="flex justify-between font-light mb-2">
+          {{ item.name }} x {{ item.quantity }}
+          <span class="font-bold not-italic">{{ item.price | currency }}</span>
+        </div>
+      </div>
+
+      <!-- Display the total cost of items in the cart -->
+      <div class="flex justify-between py-3 font-light">
+        Total:
+        <span class="font-bold not-italic">{{ getTotal(cart.items) | currency }}</span>
+      </div>
+
+      <!-- Buttons for clearing the cart and navigating to the cart page -->
+      <div class="pt-3 flex justify-between">
+        <!-- Button to clear the cart -->
+        <button (click)="onClearCart()" class="bg-rose-600 text-white rounded-full w-9 h-9">
+          <mat-icon>remove_shopping_cart</mat-icon>
+        </button>
+        <!-- Button to navigate to the cart page -->
+        <button routerLink="cart" class="bg-green-600 text-white rounded-full w-9 h-9">
+          <mat-icon>shopping_cart_checkout</mat-icon>
+        </button>
+      </div>
+
+    </div>
+  </mat-menu>
+</mat-toolbar>
