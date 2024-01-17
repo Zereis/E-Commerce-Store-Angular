@@ -1,29 +1,35 @@
-# EcommerceStore
+## Project Overview
 
-Watch tutorial on how I built this store => https://youtu.be/-QV07KcnJEk
+I undertook the task of building a website from scratch using an empty GitHub template, focusing on developing an Angular e-commerce shop. This experience allowed me to delve into various aspects of web development, from project setup to the implementation of complex features.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
+## Key Learnings
 
-## Development server
+### Project Setup and Dependencies
+Learned the intricacies of installing dependencies and setting up an Angular project, establishing a strong foundation for future development endeavors.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Building Home Page and Cart Page
+Mastered the creation of essential components, including the home page and cart page, to provide a seamless and visually appealing user experience.
 
-## Code scaffolding
+### Cart Logic Implementation
+Implemented cart logic to enhance user interaction, understanding the importance of smooth navigation and user-centric design.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Integration with Store API
+Successfully integrated the application with a Store API, gaining hands-on experience in working with external data sources and APIs.
 
-## Build
+### Stripe Payment Implementation
+Learned the complexities of implementing Stripe payments, incorporating secure and efficient payment processing functionality.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Version Migration
+Navigated the challenges of migrating the application to newer Angular versions, showcasing adaptability and proficiency in handling updates.
 
-## Running unit tests
+### Testing and Debugging
+Developed skills in thorough testing and effective debugging practices, ensuring the reliability and stability of the application.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Documentation
+Emphasized the significance of documentation, providing clear and concise records of project structure, codebase, and implementation details.
 
-## Running end-to-end tests
+## Achievements
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Successfully developed and deployed an Angular e-commerce shop.
+- Demonstrated the ability to adapt and migrate projects to newer versions.
+- Established a solid foundation in testing, debugging, and documentation practices.
