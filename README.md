@@ -1,6 +1,9 @@
 ## Project Overview
 
-I undertook the task of building a website from scratch using an empty GitHub template, focusing on developing an Angular e-commerce shop. This experience allowed me to delve into various aspects of web development, from project setup to the implementation of complex features.
+I undertook the task of building an Angular e-commerce shop by learning to code from scratch, following a comprehensive YouTube guide. This hands-on experience involved using an empty GitHub template as a starting point. Throughout the process, I explored various facets of web development, from initial project setup to the implementation of intricate features.
+
+![12](https://github.com/Zereis/E-Commerce-Store-Angular/assets/62556785/1737fbd2-0584-4cfc-bf41-fa6e74d15449)
+
 
 ## Key Learnings
 
